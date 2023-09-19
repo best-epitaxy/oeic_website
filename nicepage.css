@@ -29475,7 +29475,7 @@ section.u-palette-5-light-1:before,
 .u-container-layout.u-container-layout.u-palette-5-light-1:before,
 .u-table-alt-palette-5-light-1 tr:nth-child(even) {
   color: #111111;
-  background-color: #c8b9ee;
+  background-color: #9aae59;
 }
 .u-input.u-palette-5-light-1,
 .u-field-input.u-palette-5-light-1,
@@ -37755,7 +37755,7 @@ li.active > a.u-button-style.u-text-palette-1-base,
 li.active > a.u-button-style.u-text-palette-1-base[class*="u-border-"],
 a.u-button-style.u-text-palette-1-base,
 a.u-button-style.u-text-palette-1-base[class*="u-border-"] {
-  color: #ff5126 !important;
+  color: #ffffff !important;
 }
 a.u-button-style.u-text-palette-1-base:hover,
 a.u-button-style.u-text-palette-1-base[class*="u-border-"]:hover,
@@ -41081,8 +41081,8 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-container-layout.u-container-layout.u-custom-color-2:before,
         .u-table-alt-custom-color-2 tr:nth-child(even)
         {
-            color: #ffffff;
-            background-color: #57479a;
+            color: #00a8cb;
+            background-color: #9aae59;
         }
 
         .u-input.u-custom-color-2,
@@ -41292,7 +41292,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-table-alt-custom-color-5 tr:nth-child(even)
         {
             color: #ffffff;
-            background-color: #967bb6;
+            background-color: #9aae59;
         }
 
         .u-input.u-custom-color-5,
@@ -41852,7 +41852,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-table-alt-custom-color-13 tr:nth-child(even)
         {
             color: #ffffff;
-            background-color: #7c6fb0;
+            background-color: #9aae59;
         }
 
         .u-input.u-custom-color-13,
@@ -44839,7 +44839,10 @@ a.u-link.u-text-hover-grey-90:hover {
   min-height: 10px;
 }
 
-
+.u-custom-color-52 {
+    color: #ffffff;
+    background-color: #00a8cb;
+}
 
 
 

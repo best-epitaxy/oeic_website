@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head>
 
@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
     rel="stylesheet">
 
-  <title>Finance Business HTML5 Template</title>
+  <title>元澄半導體科技</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
   <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet/less" type="text/css" href="assets/css/timeline.less">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.13.1/less.min.js"></script>
+
   <!--
 
 Finance Business TemplateMo
@@ -65,31 +68,39 @@ https://templatemo.com/tm-545-finance-business
   <header class="">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <h2>BE Epitaxy</h2>
-          <!-- <h5 class="subtitle">Semiconductor Technology Co. Ltd</h5> -->
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Our Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-xs-12">
+            <a class="navbar-brand" href="index.html">
+              <img style="height:55px;width:auto;margin-left:-150px;padding-bottom: 8px;"
+                src="assets/images/oeic_logo_title_white.svg" />
+              <!-- <h2 style="font-size: xx-large;margin-left:12px">BE Epitaxy 元澄半導體科技</h2> -->
+              <!-- <h5 class="subtitle">Semiconductor Technology Co. Ltd</h5> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-xs-12" style="margin-left:150px;margin-top: 7px;">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Our Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -217,7 +228,38 @@ https://templatemo.com/tm-545-finance-business
     </div>
   </div>
 
+  <div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div id="content">
+            <h1>Company History</h1>
 
+            <ul class="timeline">
+              <li class="event" data-date="2020-Dec">
+                <h3>元澄半導體股份有限公司正式成立</h3>
+              </li>
+              <li class="event" data-date="2022-Mar">
+                <h3>研發團隊進駐開始致力於矽光子技術的研究和開發</h3>
+                <!-- <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP & Busta Rhymes as an
+                  opening show.</p> -->
+              </li>
+              <li class="event" data-date="2023-SEP">
+                <h3>成功推出首顆光波導陀螺儀產品，預計參加2024年國際性會議並展示產品</h3>
+                <!-- <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get
+                  ready!</p> -->
+              </li>
+              <li class="event" data-date="Future">
+                <h3>未來，我們除了精進光波導陀螺儀產品的精度與可靠度，更將持續擴展研發產品線，推出更多創新的產品和解決方案，並致力於在光學領域持續取得突和成就</h3>
+                <!-- <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own
+                  glory.</p> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="services">
     <div class="container">
@@ -268,82 +310,6 @@ https://templatemo.com/tm-545-finance-business
     </div>
   </div>
 
-  <div class="fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="left-content">
-            <span>Lorem ipsum dolor sit amet</span>
-            <h2>Our solutions for your <em>business growth</em></h2>
-            <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus
-              laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue.
-              <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut
-              posuere ante tortor ut neque.
-            </p>
-            <a href="" class="filled-button">Read More</a>
-          </div>
-        </div>
-        <div class="col-md-6 align-self-center">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="count-area-content">
-                <div class="count-digit">945</div>
-                <div class="count-title">Work Hours</div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="count-area-content">
-                <div class="count-digit">1280</div>
-                <div class="count-title">Great Reviews</div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="count-area-content">
-                <div class="count-digit">578</div>
-                <div class="count-title">Projects Done</div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="count-area-content">
-                <div class="count-digit">26</div>
-                <div class="count-title">Awards Won</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="more-info">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="more-info-content">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/more-info.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-md-6 align-self-center">
-                <div class="right-content">
-                  <span>Who we are</span>
-                  <h2>Get to know about <em>our company</em></h2>
-                  <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus
-                    nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus<br><br>Praes end at
-                    dictum metus. Morbi id hendrerit lectus, nec dapibus ex. Etiam ipsum quam, luctus eu egestas eget,
-                    tincidunt</p>
-                  <a href="#" class="filled-button">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="testimonials">
     <div class="container">
       <div class="row">
@@ -360,7 +326,8 @@ https://templatemo.com/tm-545-finance-business
               <div class="inner-content">
                 <h4>George Walker</h4>
                 <span>Chief Financial Analyst</span>
-                <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo
+                <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada
+                  justo
                   sem sit amet quam. Pellentesque in sagittis lacus."</p>
               </div>
               <img src="http://placehold.it/60x60" alt="">
@@ -370,7 +337,8 @@ https://templatemo.com/tm-545-finance-business
               <div class="inner-content">
                 <h4>John Smith</h4>
                 <span>Market Specialist</span>
-                <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan,
+                <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris
+                  accumsan,
                   arcu id ornare malesuada, est nulla luctus nisi."</p>
               </div>
               <img src="http://placehold.it/60x60" alt="">
@@ -380,7 +348,8 @@ https://templatemo.com/tm-545-finance-business
               <div class="inner-content">
                 <h4>David Wood</h4>
                 <span>Chief Accountant</span>
-                <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae
+                <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque,
+                  vitae
                   egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
               </div>
               <img src="http://placehold.it/60x60" alt="">
@@ -390,7 +359,8 @@ https://templatemo.com/tm-545-finance-business
               <div class="inner-content">
                 <h4>Andrew Boom</h4>
                 <span>Marketing Head</span>
-                <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis
+                <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem
+                  turpis
                   quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
               </div>
               <img src="http://placehold.it/60x60" alt="">
@@ -490,7 +460,8 @@ https://templatemo.com/tm-545-finance-business
       <div class="row">
         <div class="col-md-3 footer-item">
           <h4>Finance Business</h4>
-          <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+          <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.
+          </p>
           <ul class="social-icons">
             <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a>
             </li>

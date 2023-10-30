@@ -260,14 +260,16 @@ header .navbar {
 .background-header {
 	top: 0;
 	position: fixed;
-	background-color: #fff!important;
+	background-color: #003477!important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+	/* background-image: url(../images/oeic_logo_title.svg); */
 }
 .background-header .navbar-brand h2 {
 	color: #a4c639!important;
 }
 .background-header .navbar-nav a.nav-link {
-	color: #1e1e1e!important;
+	/* color: #1e1e1e!important; */
+	color: #f8f8f8!important;
 }
 .background-header .navbar-nav .nav-link:hover,
 .background-header .navbar-nav .active>.nav-link,
@@ -278,7 +280,7 @@ header .navbar {
 }
 .navbar .navbar-brand {
 	float: 	left;
-	margin-top: 12px;
+	margin-top: 7px;
 	outline: none;
 }
 .navbar .navbar-brand h2 {

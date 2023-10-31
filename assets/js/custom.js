@@ -5,6 +5,21 @@ jQuery(document).ready(function ($) {
     $("#tabs").tabs();
   });
 
+  $('a[href^="#"]').click(function (e) {
+    e.preventDefault();
+
+    let targetId = $(this).attr("href").substring(1);
+    let targetElement = $("#" + targetId);
+    let targetPosition = targetElement.offset().top;
+
+    $("html, body").animate(
+      {
+        scrollTop: targetPosition - 130, // 100 是你想要的留白高度
+      },
+      "slow"
+    ); // 'slow' 會實現平滑滾動效果
+  });
+
   // Page loading animation
 
   $("#preloader").animate(

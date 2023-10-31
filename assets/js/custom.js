@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
       margin: 30,
       autoplay: false,
       smartSpeed: 700,
-      autoplayTimeout: 6000,
+      autoplayTimeout: 7000,
       responsive: {
         0: {
           items: 1,

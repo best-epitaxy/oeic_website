@@ -409,15 +409,15 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_01.jpg);
+	background-image: url(../images/slide_01_blackmask.jpg);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/slide_02.jpg);
+	background-image: url(../images/slide_02_blackmask.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_03.jpg);
+	background-image: url(../images/slide_03_balckmask.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -471,18 +471,17 @@ ul.slick-dots {
   	transform: translate(-50%, -50%);
 }
 
-.Modern-Slider .text-content .text-mask{
+/* .Modern-Slider .text-content .text-mask{
 	padding: 20px 20px 20px 20px;
 	text-align: left;
-	/* border-color: red;
-	border-style: dashed; */
+	
   	width: 50%;
   	position: absolute;
   	top: 50%;
   	left: 24%;
   	transform: translate(-50%, -50%);
 	background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 .Modern-Slider .item h6 {
   margin-bottom: 15px;
@@ -924,7 +923,7 @@ ul.slick-dots {
 /* Footer Style */
 
 footer {
-	background-color: #232323;
+	background-color: #0a517a;
 	padding: 80px 0px;
 	color: #fff;
 }

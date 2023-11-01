@@ -12,6 +12,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #232323!important;
 }
 p {
 	margin-bottom: 0px;
@@ -409,7 +410,7 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_01_blackmask.jpg);
+	background-image: url(../images/slide_01_blackmask2.jpg);
 }
 
 .Modern-Slider .item-2 .img-fill {
@@ -686,7 +687,7 @@ ul.slick-dots {
 }
 
 .more-info .more-info-content {
-	background-color: #f7f7f7;
+	background-color: #2b2626;
 }
 
 .about-info .more-info-content {

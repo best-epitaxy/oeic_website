@@ -1258,8 +1258,35 @@ footer .contact-form button.filled-button:hover {
 	font-size: 15px;
 }
 
+.brand-logo {
+	height:48px;
+	margin-left:0px;
+	width:auto;
+	padding-bottom: 0px;
+}
 
 /* Responsive Style */
+@media (max-height:465px) {
+	.text-content {
+		margin-top: 50px; /* 或者使用其他的CSS屬性來調整位置 */
+	}
+}
+
+@media (max-width: 620px) {
+	.brand-logo {
+	  height:28px; 
+	}
+  }
+@media (max-width: 400px) {
+	.brand-logo {
+	  height:20px; 
+	}
+  }
+@media (max-height: 350px){
+.navbar-expand-lg {
+    visibility: collapse;
+}}
+
 @media (max-width: 768px) {
 	.sub-header {
 		display: none;

@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
   }
 
   $(".Modern-Slider").slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 10000,
     speed: 600,
     slidesToShow: 1,

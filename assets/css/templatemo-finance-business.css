@@ -418,7 +418,7 @@ header .navbar {
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_03_balckmask.jpg);
+	background-image: url(../images/slide_ai_03.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -465,11 +465,14 @@ ul.slick-dots {
 
 .Modern-Slider .text-content {
 	text-align: left;
-  	width: 75%;
+  	max-width: 535px;
   	position: absolute;
   	top: 50%;
-  	left: 50%;
+  	left: 35%;
   	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7); /* 可調整透明度 */
+	padding: 1.3em 3em 1.3em 1.3em;  /* 根據需要調整內距 */
+	display: block; /* 使背景貼近文字 */
 }
 
 /* .Modern-Slider .text-content .text-mask{
@@ -1264,7 +1267,24 @@ footer .contact-form button.filled-button:hover {
 	width:auto;
 	padding-bottom: 0px;
 }
-
+.footer-info {
+	font-size: large;
+	margin-top: 20px;
+	color: aliceblue;
+	text-align: center;
+  }
+  
+  @media (max-width: 992px) {
+	.footer-info {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.footer-info a, .footer-info i {
+	  margin-bottom: 10px; /* 給予a標籤與i標籤之間一些間隔 */
+	}
+  }
 /* Responsive Style */
 @media (max-height:465px) {
 	.text-content {
@@ -1272,9 +1292,14 @@ footer .contact-form button.filled-button:hover {
 	}
 }
 
+
 @media (max-width: 620px) {
 	.brand-logo {
 	  height:28px; 
+	}
+	
+	.footer-logo {
+		font-size: x-small;
 	}
   }
 @media (max-width: 400px) {
@@ -1282,12 +1307,22 @@ footer .contact-form button.filled-button:hover {
 	  height:20px; 
 	}
   }
-@media (max-height: 350px){
+@media (max-height: 460px){
 .navbar-expand-lg {
     visibility: collapse;
 }}
 
 @media (max-width: 768px) {
+	.fun-facts {
+		margin-top: 14px;
+		background-image: url(../images/fun-facts-bg.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 14px 0px;
+		color: #fff;
+	}
 	.sub-header {
 		display: none;
 	}
@@ -1357,6 +1392,21 @@ footer .contact-form button.filled-button:hover {
 }
 
 @media (max-width: 992px) {
+	.footer-logo {
+		height: 36px; width: auto;
+		margin-left:-50px;
+	}
+	.Modern-Slider .text-content {
+		text-align: left;
+		  width:90%;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		background-color: rgba(0, 0, 0, 0.7); 
+		padding: 1.3em 1.3em 1.3em 1.3em; 
+		display: block; 
+	}
 	.navbar .navbar-brand {
 		position: absolute;
 		left: 30px;

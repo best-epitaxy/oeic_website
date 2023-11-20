@@ -1,6 +1,11 @@
 jQuery(document).ready(function ($) {
   "use strict";
-
+  // $(".nav-link").click(function () {
+  //   // 在992px以下，點擊按鈕後隱藏#navbarResponsive
+  //   if ($(window).width() < 992) {
+  //     $("#navbarResponsive").toggle();
+  //   }
+  // });
   $(function () {
     $("#tabs").tabs();
   });
@@ -18,6 +23,11 @@ jQuery(document).ready(function ($) {
       },
       "slow"
     ); // 'slow' 會實現平滑滾動效果
+
+    if ($(window).width() < 992) {
+      $("#navbarResponsive").collapse("hide");
+      $(".navbar-toggler").attr("aria-expanded", "false");
+    }
   });
 
   // Page loading animation
@@ -107,7 +117,7 @@ jQuery(document).ready(function ($) {
   }
 
   $(".Modern-Slider").slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 10000,
     speed: 600,
     slidesToShow: 1,

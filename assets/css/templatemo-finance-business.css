@@ -408,6 +408,9 @@ header .navbar {
 	background-repeat: no-repeat;
 	height:95vh;
 }
+.Modern-Slider .item-0 .img-fill {
+	background-image: url(../images/ofc24-1.png);
+}
 
 .Modern-Slider .item-1 .img-fill {
 	background-image: url(../images/slide_new_03_2.jpg);
@@ -461,6 +464,18 @@ header .navbar {
 
 ul.slick-dots {
   display: none!important;
+}
+
+.Modern-Slider .text-content-ofc {
+	text-align: left;
+  	max-width: 900px;
+  	position: absolute;
+  	top: 35%;
+  	left: 65%;
+  	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7); /* 可調整透明度 */
+	padding: 1.3em 3em 1.3em 1.3em;  /* 根據需要調整內距 */
+	display: block; /* 使背景貼近文字 */
 }
 
 .Modern-Slider .text-content {
@@ -1293,15 +1308,7 @@ footer .contact-form button.filled-button:hover {
 }
 
 
-@media (max-width: 620px) {
-	.brand-logo {
-	  height:28px; 
-	}
-	
-	.footer-logo {
-		font-size: x-small;
-	}
-  }
+
 @media (max-width: 400px) {
 	.brand-logo {
 	  height:20px; 
@@ -1312,7 +1319,19 @@ footer .contact-form button.filled-button:hover {
     visibility: collapse;
 }}
 
+@media (max-width: 620px) {
+	.brand-logo {
+	  height:28px; 
+	}	
+	.footer-logo {
+		height: 26px; width: auto;
+	}
+  }
+
 @media (max-width: 768px) {
+	.footer-logo {
+		height: 26px; width: auto;
+	}
 	.fun-facts {
 		margin-top: 14px;
 		background-image: url(../images/fun-facts-bg.jpg);
@@ -1394,7 +1413,7 @@ footer .contact-form button.filled-button:hover {
 @media (max-width: 992px) {
 	.footer-logo {
 		height: 36px; width: auto;
-		margin-left:-50px;
+		margin-left:0px;
 	}
 	.Modern-Slider .text-content {
 		text-align: left;

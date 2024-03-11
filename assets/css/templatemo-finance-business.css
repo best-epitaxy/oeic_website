@@ -209,6 +209,7 @@ a.border-button:hover {
 }
 
 .sub-header ul.right-icons li {
+	font-size:1.5em;
 	margin-right: -4px;
 	width: 46px;
 	display: inline-block;
@@ -570,7 +571,11 @@ ul.slick-dots {
 .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
 
 
-
+.ofc-banner {
+	background-color: #0f0f0e;
+	padding: 40px 0px;
+	color: #fff;
+}
 
 /* Request Form */
 
@@ -1288,7 +1293,6 @@ footer .contact-form button.filled-button:hover {
 	color: aliceblue;
 	text-align: center;
   }
-  
   @media (max-width: 992px) {
 	.footer-info {
 	  display: flex;
@@ -1299,12 +1303,22 @@ footer .contact-form button.filled-button:hover {
 	.footer-info a, .footer-info i {
 	  margin-bottom: 10px; /* 給予a標籤與i標籤之間一些間隔 */
 	}
+	.Modern-Slider .item-0 .img-fill {
+		background-image: url(../images/ofc24_small.png);
+		background-size: contain;
+		
+	}
+	.Modern-Slider .text-content-ofc{
+		display:none;
+	  }
   }
 /* Responsive Style */
 @media (max-height:465px) {
 	.text-content {
 		margin-top: 50px; /* 或者使用其他的CSS屬性來調整位置 */
 	}
+	
+
 }
 
 
@@ -1326,6 +1340,7 @@ footer .contact-form button.filled-button:hover {
 	.footer-logo {
 		height: 26px; width: auto;
 	}
+	
   }
 
 @media (max-width: 768px) {

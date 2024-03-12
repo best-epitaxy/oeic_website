@@ -1,5 +1,18 @@
 jQuery(document).ready(function ($) {
-  "use strict";
+  $('.nav-item a[href="#top"]').addClass("active");
+  $(".navbar-nav .nav-link").on("click", function () {
+    // 移除先前所有導航項目上的 'active' 類
+    $('.nav-item a[href="#top"]').removeClass("active");
+    $(".navbar-nav .nav-item").removeClass("active");
+
+    // 將 'active' 類添加到被點擊的導航項目上
+    // 這裡使用了 $(this).parent() 來定位到 <li> 元素，也就是 .nav-item
+    $(this).parent().addClass("active");
+
+    // 如果你需要防止頁面跳轉到錨點，可以在這裡添加一行代碼：
+    // e.preventDefault();
+  });
+  ("use strict");
   // $(".nav-link").click(function () {
   //   // 在992px以下，點擊按鈕後隱藏#navbarResponsive
   //   if ($(window).width() < 992) {
@@ -132,10 +145,29 @@ jQuery(document).ready(function ($) {
     nextArrow: '<button class="NextArrow"></button>',
   });
 
+  // function visible(partial) {
+  //   var $t = partial,
+  //     $w = jQuery(window),
+  //     viewTop = $w.scrollTop(),
+  //     viewBottom = viewTop + $w.height(),
+  //     _top = $t.offset().top,
+  //     _bottom = _top + $t.height(),
+  //     compareTop = partial === true ? _bottom : _top,
+  //     compareBottom = partial === true ? _top : _bottom;
+
+  //   return compareBottom <= viewBottom && compareTop >= viewTop && $t.is(":visible");
+  // }
   function visible(partial) {
     var $t = partial,
-      $w = jQuery(window),
-      viewTop = $w.scrollTop(),
+      $w = jQuery(window);
+
+    // 確保元素存在
+    if ($t.length === 0) {
+      console.log("Element not found");
+      return false;
+    }
+
+    var viewTop = $w.scrollTop(),
       viewBottom = viewTop + $w.height(),
       _top = $t.offset().top,
       _bottom = _top + $t.height(),

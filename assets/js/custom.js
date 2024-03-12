@@ -75,9 +75,9 @@ jQuery(document).ready(function ($) {
       dots: true,
       items: 1,
       margin: 30,
-      autoplay: false,
+      autoplay: true,
       smartSpeed: 700,
-      autoplayTimeout: 7000,
+      autoplayTimeout: 6000,
       responsive: {
         0: {
           items: 1,
@@ -105,7 +105,7 @@ jQuery(document).ready(function ($) {
       dots: true,
       items: 1,
       margin: 30,
-      autoplay: false,
+      autoplay: true,
       smartSpeed: 700,
       autoplayTimeout: 6000,
       responsive: {
@@ -128,10 +128,10 @@ jQuery(document).ready(function ($) {
       },
     });
   }
-
+  // 首頁slide show 開關以及時間
   $(".Modern-Slider").slick({
-    autoplay: false,
-    autoplaySpeed: 10000,
+    autoplay: true,
+    autoplaySpeed: 6000,
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -1347,8 +1347,13 @@ footer .contact-form button.filled-button:hover {
 	}
 
   }
-
+.nav-item.language{
+	display:none;
+}
 @media (max-width: 768px) {
+	.nav-item.language{
+		display:inline-block;
+	}
 	.footer-logo {
 		height: 26px; width: auto;
 	}

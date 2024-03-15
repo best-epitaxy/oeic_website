@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet/less" type="text/css" href="assets/css/timeline.less">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.13.1/less.min.js"></script>
-
+  <link rel="stylesheet" href="./assets/css/language-toggle.css">
   <!--
 
 Finance Business TemplateMo
@@ -55,13 +55,25 @@ https://templatemo.com/tm-545-finance-business
         </div>
         <div class="col-md-4">
           <ul class="right-icons">
-            <li><a href="./index_en.html"><i class="fa fa-language" aria-hidden="true"></i></li>
+            <!-- <li><a href="./index_en.html"><i class="fa fa-language" aria-hidden="true"></i></li> -->
             <li><a href="https://maps.app.goo.gl/4LLCWFsTYq7C5szX8" target="_blank"><i class="fa fa-map-marker"
                   aria-hidden="true"></i></a></li>
             <li><a href="mailto:sales@best-oeic.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
             <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
           </ul>
+          <div class="demo">
+            <form action="#">
+              <span style="color:aliceblue;font-weight: 600;">中</span>
+              <div class="switch">
+
+                <input id="switch-1" type="checkbox" class="switch-input">
+                <label for="switch-1" class="switch-label">Switch</label>
+
+              </div>
+              <span style="color:aliceblue;font-weight: 500;">EN</span>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -634,7 +646,26 @@ https://templatemo.com/tm-545-finance-business
   <script src="assets/js/owl.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/accordions.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const switchInput = document.getElementById('switch-1');
 
+      // 檢查頁面URL決定開關狀態
+      if (window.location.href.includes('index_en.html')) {
+        switchInput.checked = true;
+      }
+
+      switchInput.addEventListener('change', function () {
+        if (this.checked) {
+          // 如果開關被選中，轉到英文頁面
+          window.location.href = 'index_en.html';
+        } else {
+          // 如果開關沒被選中，轉到中文頁面
+          window.location.href = 'index.html';
+        }
+      });
+    });
+  </script>
   <script language="text/Javascript">
     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
     function clearField(t) {                   //declaring the array outside of the

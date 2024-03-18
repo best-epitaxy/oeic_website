@@ -688,8 +688,10 @@ https://templatemo.com/tm-545-finance-business
           // 如果開關沒被選中，轉到中文頁面
           window.location.href = 'index.html';
         }
+        document.cookie = "languageSwitched=true; path=/; max-age=86400"; // 這個cookie將在一天後過期
       });
     });
+
   </script>
   <script language="text/Javascript">
     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field

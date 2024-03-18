@@ -129,20 +129,23 @@ jQuery(document).ready(function ($) {
     });
   }
   // 首頁slide show 開關以及時間
-  $(".Modern-Slider").slick({
-    autoplay: true,
-    autoplaySpeed: 6000,
-    speed: 600,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    pauseOnHover: false,
-    dots: true,
-    pauseOnDotsHover: true,
-    cssEase: "linear",
-    // fade:true,
-    draggable: false,
-    prevArrow: '<button class="PrevArrow"></button>',
-    nextArrow: '<button class="NextArrow"></button>',
+  imagesLoaded(document.body, function () {
+    // 圖片全部加載完成後，初始化滑塊
+    $(".Modern-Slider").slick({
+      autoplay: true,
+      autoplaySpeed: 6000,
+      speed: 600,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      pauseOnHover: false,
+      dots: true,
+      pauseOnDotsHover: true,
+      cssEase: "linear",
+      // fade:true,
+      draggable: false,
+      prevArrow: '<button class="PrevArrow"></button>',
+      nextArrow: '<button class="NextArrow"></button>',
+    });
   });
 
   // function visible(partial) {

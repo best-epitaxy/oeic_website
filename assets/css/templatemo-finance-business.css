@@ -1334,17 +1334,20 @@ footer .contact-form button.filled-button:hover {
 
   }
 @media (max-height: 460px){
+	
 .navbar-expand-lg {
     visibility: collapse;
 }}
-
+@media (max-width: 450px){
+	.footer-logo {
+		height: auto; width: 280px;
+	}
+}
 @media (max-width: 620px) {
 	.brand-logo {
 	  height:28px; 
 	}	
-	.footer-logo {
-		height: 26px; width: auto;
-	}
+
 
   }
 .nav-item.language{

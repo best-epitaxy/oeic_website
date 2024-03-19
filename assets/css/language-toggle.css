@@ -67,7 +67,7 @@
   .switch-label:before {
     width: 100%;
     height: 100%;
-    background-color: #4070c9;
+    background-color: #89c12d;
     border-radius: 9999em;
     transition: background-color 0.25s ease;
   }
@@ -88,7 +88,7 @@
     /* Switch Knob */
   }
   .switch-input:checked + .switch-label:before {
-    background-color: #89c12d;
+    background-color: #4070c9;
   }
   .switch-input:checked + .switch-label:after {
     left: 24px;

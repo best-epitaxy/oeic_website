@@ -30,6 +30,19 @@ Finance Business TemplateMo
 https://templatemo.com/tm-545-finance-business
 
 -->
+  <script>
+    class MyModule extends HTMLElement {
+      connectedCallback() {
+        fetch("./exhibition/exhibition-info.html")
+          .then(response => response.text())
+          .then(html => {
+            this.innerHTML = html;
+          })
+          .catch(error => console.error('Failed to load HTML content:', error));
+      }
+    }
+    customElements.define('exhibition-info', MyModule);
+  </script>
 </head>
 
 <body>
@@ -159,6 +172,7 @@ https://templatemo.com/tm-545-finance-business
   <!-- Banner Starts Here -->
   <div class="main-banner header-text" id="top">
     <div class="Modern-Slider">
+      <exhibition-info></exhibition-info>
       <!-- <div class="item item-z">
         <div class="img-fill">
           <div class="text-content">

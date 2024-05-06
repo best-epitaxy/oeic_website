@@ -1297,7 +1297,7 @@ footer .contact-form button.filled-button:hover {
 	text-align: center;
   }
 .ofc-banner {
-	display:none;
+	display:block;
 }
   @media (max-width: 992px) {
 	.footer-info {
